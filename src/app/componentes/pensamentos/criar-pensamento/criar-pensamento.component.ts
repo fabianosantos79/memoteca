@@ -15,6 +15,9 @@ export class CriarPensamentoComponent implements OnInit {
     modelo: 'modelo1'
   }
 
+  // nome= 'Fabiano'
+  // idade = 44
+
   constructor() { }
 
   ngOnInit(): void {
@@ -25,7 +28,7 @@ export class CriarPensamentoComponent implements OnInit {
   }
 
   cancelar(){
-    alert("Cancelamento realizado")
+
   }
 
 }
