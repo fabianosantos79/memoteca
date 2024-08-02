@@ -8,14 +8,21 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardPensamentoComponent implements OnInit {
 
   @Input() pensamento = {
-    conteudo: 'I love Angular',
-    autoria: 'Fabiano',
-    modelo: 'modelo3'
+    conteudo: '',
+    autoria: '',
+    modelo: ''
   }
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  larguraCardPensamento(): string{
+    if(this.pensamento.conteudo.length >= 256){
+      return "pensamento-g";
+    }
+    return "pensamento-p";
   }
 
 }
