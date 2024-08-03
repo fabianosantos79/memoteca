@@ -1,4 +1,6 @@
+import { PensamentoService } from './../pensamento.service';
 import { Component, OnInit } from '@angular/core';
+import { IPensamento } from '../pensamento';
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -7,43 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarPensamentoComponent implements OnInit {
 
-  listaDePensamentos = [
-    {
-      id: '1',
-      conteudo: 'Aprendendo Angular na Alura',
-      autoria: 'Dev',
-      modelo: 'modelo1'
-    },
-    {
-      id: '2',
-      conteudo: 'Aprendendo React na Alura',
-      autoria: 'Designer',
-      modelo: 'modelo3'
-    }
-    ,
-    {
-      id: '3',
-      conteudo: 'Aprendendo Vue JS na Alura',
-      autoria: 'Tester',
-      modelo: 'modelo2'
-    },
-    {
-      id: '4',
-      conteudo: 'Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Diuretics paradis num copo é motivis de denguis. Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.',
-      autoria: "Fabiano",
-      modelo: 'modelo2'
-    },
-    {
-      id: '5',
-      conteudo: 'Aprendendo Bootstrap na Alura aprendendo Bootstrap na Alura aprendendo Bootstrap na Alura aprendendo Bootstrap na Alura',
-      autoria: 'Designer',
-      modelo: 'modelo1'
-    }
-  ];
+  listaDePensamentos: IPensamento[] = [];
 
-  constructor() { }
+  constructor(private service: PensamentoService) {
+
+  }
 
   ngOnInit(): void {
+    this.service.listar().subscribe(listaDePensamentos => {
+      this.listaDePensamentos = listaDePensamentos;
+    });
   }
 
 }
