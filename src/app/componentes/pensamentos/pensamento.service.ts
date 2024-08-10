@@ -17,7 +17,7 @@ export class PensamentoService {
     return this.http.get<IPensamento[]>(this.API);
    }
 
-   ciar(pensamento: IPensamento): Observable<IPensamento>{
+   criar(pensamento: IPensamento): Observable<IPensamento>{
     return this.http.post<IPensamento>(this.API, pensamento);
    }
 
