@@ -9,7 +9,7 @@
     {
       "id": 2,
       "conteudo": "Estudando Angular",
-      "autoria": "Dev Alura",
+      "autoria": "Dev Alura 10",
       "modelo": "modelo2"
     },
     {
@@ -17,6 +17,54 @@
       "autoria": "Dev Frontend Fab",
       "modelo": "modelo3",
       "id": 4
+    },
+    {
+      "id": 5,
+      "conteudo": "Na minha máquina funciona!",
+      "autoria": "Dev da madrugada",
+      "modelo": "modelo3"
+    },
+    {
+      "conteudo": "Vc faz TI? Conserta meu celular!",
+      "autoria": "Grupo da família",
+      "modelo": "modelo2",
+      "id": 6
+    },
+    {
+      "conteudo": "Já tentou reiniciar o roteador?",
+      "autoria": "Pessoa da operadora",
+      "modelo": "modelo3",
+      "id": 7
+    },
+    {
+      "conteudo": "Por que meu código funcionou?",
+      "autoria": "Dev",
+      "modelo": "modelo1",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "conteudo": "Na volta a gente compra!",
+      "autoria": "Mãe",
+      "modelo": "modelo2"
+    },
+    {
+      "conteudo": "Sou poliglota; falo português, inglês e JavaScript!",
+      "autoria": "Devs",
+      "modelo": "modelo1",
+      "id": 10
+    },
+    {
+      "conteudo": "Antes só do que mal acompanhado",
+      "autoria": "Alguém",
+      "modelo": "modelo2",
+      "id": 11
+    },
+    {
+      "conteudo": "Me queira bem que eu não quero você mal",
+      "autoria": "Ditão",
+      "modelo": "modelo3",
+      "id": 12
     }
   ],
   "comments": [
